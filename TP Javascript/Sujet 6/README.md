@@ -1,6 +1,10 @@
 
 # Sujet 6 : Profils
 
+![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)
+![npm](https://badgen.net/badge/icon/npm?icon=npm&label)
+![nver](https://badgen.net/npm/v/express)
+
 ## Description
 
 Page web de création d'utilisateurs et formulaire avec AJAX, requete GET et POST.
