@@ -2,8 +2,9 @@
 # Sujet 7 : Framework Vue.js
 
 ![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)
-![Commit](https://badgen.net/github/last-commit/micromatch/micromatch)
-
+![status](https://badgen.net/github/status/micromatch/micromatch/4.0.1)
+![npm](https://badgen.net/badge/icon/npm?icon=npm&label)
+![nver](https://badgen.net/npm/v/express)
 
 ## Description
 
