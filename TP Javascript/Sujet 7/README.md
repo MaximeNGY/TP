@@ -1,6 +1,10 @@
 
 # Sujet 7 : Framework Vue.js
 
+![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)
+![Commit](https://badgen.net/github/last-commit/micromatch/micromatch)
+
+
 ## Description
 
 Introduction au framework web Vue.js avec le concept de composants et tous ce que cela implique. L'avantage du SPA (Single Page Application)
