@@ -1,5 +1,9 @@
 # Sujet 5 : Application web 'profils'
 
+![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)
+![npm](https://badgen.net/badge/icon/npm?icon=npm&label)
+![nver](https://badgen.net/npm/v/express)
+
 ## Pour le lancer localement
 
 Cloner le projet
