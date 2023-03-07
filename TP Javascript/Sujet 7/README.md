@@ -31,3 +31,8 @@ Lancer le serveur
   npm run dev
 ```
 
+Ceci lance le serveur de développement à l'adresse
+
+```bash
+  http://locahost:5173
+```
