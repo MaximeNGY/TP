@@ -1,6 +1,0 @@
-{
-    "p132": {"id": "p132", "nom": "Minou", "sexe": "homme", "portrait": "https://moodle.iutv.univ-paris13.fr/img/bjs2/chat2.svg", "messages": 54, "description": "Miaou ? ", "likes": 132 },
-    "p125": {"id": "p125", "nom": "L. Neige", "sexe": "femme", "portrait": "https://moodle.iutv.univ-paris13.fr/img/bjs2/reindeer.png", "messages": 172, "description": "Je suis un peu timide.", "likes": 232 },
-    "p241": {"id": "p241", "nom": "Anonyme", "sexe": "femme", "portrait": "https://moodle.iutv.univ-paris13.fr/img/bjs2/et-masque.png", "messages": 2, "description": "J'ai beaucoup voyagé. Je cherche quelqu'un qui accepte les différences.", "likes": 5 },
-    "p112": {"id": "p112", "nom": "Père N.", "sexe": "homme", "portrait": "https://moodle.iutv.univ-paris13.fr/img/bjs2/santa.png", "messages": 1300482832, "description": "J'aime la nature et les paysages nordiques. Frileuses s'abstenir. Voyage d'affaires en période de fêtes.", "likes": 5103003013 }
-  }
