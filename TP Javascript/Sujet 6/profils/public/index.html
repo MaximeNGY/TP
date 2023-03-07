@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Profils</title>
+		<script src="https://moodle.iutv.univ-paris13.fr/img/bjs2/bjs2-js-lib.js"></script>
+		<link rel="stylesheet" href="profils.css"/>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	</head>
+	<body>
+      <ul id="liste">
+
+      </ul>
+      <div id="profil-principal" class="profil">
+          <img class="portrait" src="" alt=""/>
+          <p class="nom"></p>
+          <p class="stats"><span class="messages">? messages</span> <span class="likes">? likes</span></p>
+          <p class="description"></p>
+          <span id="editer">[Éditer]</span>
+      </div>
+
+      <div id="formulaire">
+        <div id="formulaire-boite">
+          <span id="fermer">x</span>
+          <div id="ligne-nom"        ><label for="edit-nom"        >Nom:        </label><input    id="edit-nom"      type="text"/>  </div>
+          <div id="ligne-sexe"       ><label for="edit-sexe"       >Sexe:       </label><!--
+            --><select id="edit-sexe">
+              <option value="femme">Femme</option>
+              <option value="homme">Homme</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div id="ligne-messages"   ><label for="edit-portrait"   >Portrait:   </label><input    id="edit-portrait" type="text"/></div>
+          <div id="ligne-messages"   ><label for="edit-messages"   >Messages:   </label><input    id="edit-messages" type="number"/></div>
+          <div id="ligne-likes"      ><label for="edit-likes"      >Likes:      </label><input    id="edit-likes"    type="number"/></div>
+          <div id="ligne-description"><label for="edit-description">Description:</label><textarea id="edit-description"></textarea> </div>
+          <input id="enregistrer" type="button" value="Enregistrer"/>
+        </div>
+      </div>
+	  <script type="module" src="profils.js"></script>
+	</body>
+</html>

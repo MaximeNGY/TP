@@ -1,0 +1,259 @@
+/* Inspiré de https://freefrontend.com/css-profile-cards/ */
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+body{
+	background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(240,180,149,1) 100%); 
+	background-repeat: no-repeat;
+	font-family: sans;
+	color: #444;
+	background-attachment: fixed;
+}
+
+/***********************************/
+/* liste **/
+/***********************************/
+
+#liste{
+	display: flex;
+	list-style-type: none ;
+}
+
+#liste li{
+	margin: 1em;
+	background-color: #222831;
+	color: white;
+	padding: .7em;
+	border-radius: .3em;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+#liste li{
+	margin: 1em;
+	background-color: #222831;
+	color: white;
+	padding: .7em;
+	border-radius: .3em;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+#liste li:hover{
+	background-color: #522831;	
+}
+
+/***********************************/
+/* Profil **/
+/***********************************/
+
+#profil-principal{
+	margin-left: 7em;
+	display: none;
+}
+
+.profil {
+	position: relative;
+	background-color: #222831;
+	color: white;
+	width: 17em;
+	text-align: center;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	font-family: 'Baloo Paaji 2', cursive;
+	padding: .5em;
+}
+
+.profil .portrait {
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	border: 5px solid #272133;
+	margin-top: 20px;
+	background-color: white;
+}
+
+.profil .portrait.homme {
+	box-shadow: 0 10px 50px rgba(25, 110, 235, .8);	
+}
+
+.profil .portrait.femme {
+	box-shadow: 0 10px 50px rgba(235, 25, 110, .6);	
+}
+
+.profil .stats {
+	font-size: 1.2em;
+	margin-top: .5em;
+}
+
+.profil .stats span {
+	margin: 1em;
+}
+
+.profil .nom{
+	margin-top: 15px;
+	margin-bottom: .5em;
+	font-size: 1.5em;
+	
+}
+
+#editer{
+	cursor: pointer;
+	cursor: pointer;
+}
+
+#editer:hover{
+	color: #aa0;
+}
+
+.profil[data-id="p132"]::before{
+	content: '🐁';
+	position: absolute;
+	top: 200px;
+	right: -100px;
+	animation: 1s 1 normal souris;
+	animation-delay: 4000ms;
+	opacity: 0;
+}
+
+@keyframes souris {
+	from {
+		right: -100px;
+		opacity: 1;
+	}
+	to {
+		right: 300px;
+		opacity: 1;
+	}
+}
+
+.profil[data-id="p132"]::after{
+	content: '';
+	border-radius: 50%;
+	background-color: #444;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 106px;
+	left: 133px;
+	animation: 1s 1 normal oeilg;
+	animation-delay: 4000ms;
+	z-index: 2;
+	opacity: 0;
+}
+
+.profil[data-id="p132"] .nom::before{
+	content: '';
+	border-radius: 50%;
+	background-color: #444;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 107px;
+	left: 154px;
+	animation: 1s 1 normal oeild;
+	animation-delay: 4000ms;
+	z-index: 2;
+	opacity: 0;
+}
+
+@keyframes oeilg {
+	from {
+		opacity: 1;
+		left: 133px;
+	}
+	to {
+		opacity: 1;
+		left: 126px;
+	}
+}
+
+@keyframes oeild {
+	from {
+		opacity: 1;
+		left: 154px;
+	}
+	to {
+		opacity: 1;
+		left: 147px;
+	}
+}
+
+.profil[data-id="p132"] .nom::after{
+	content: '';
+	width: 14px;
+	height: 8px;
+	border-right: 8px solid white;
+	border-left:  7px solid white;
+	position: absolute;
+	top: 104px;
+	left: 129px;
+	animation: 1s 1 normal blanc;
+	animation-delay: 4000ms;
+	opacity: 0;
+}
+@keyframes blanc {
+	from {opacity: 1;}
+	to   {opacity: 1;}
+}
+
+/***********************************/
+/* Formulaire **/
+/***********************************/
+
+#formulaire{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+
+#formulaire-boite{
+	position: absolute;
+	top: 5em;
+	left: 5em;
+	width: 25em;
+	background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(240,180,149,1) 100%); 
+	border-radius: 5px;
+	padding: 1em;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#fermer{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: inline-block;
+	padding: .3em;
+	cursor: pointer;
+}
+
+#fermer:hover{
+	color: #aa0;
+}
+
+#formulaire-boite>div{
+	margin: .5em 0;
+}
+
+#formulaire label{
+	display: inline-block;
+	min-width: 7em;
+	vertical-align: top;
+}
+
+#formulaire-boite>div input,#formulaire textarea{
+	width: 240px;
+	box-sizing: content-box;
+}
+
+#formulaire textarea{
+	height: 7em;
+}
