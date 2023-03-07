@@ -1,8 +1,9 @@
 
 # Sujet 7 : Framework Vue.js
 
+## Description
 
-
+Introduction au framework web Vue.js avec le concept de composants et tous ce que cela implique. L'avantage du SPA (Single Page Application)
 
 ## Pour le lancer localement
 
